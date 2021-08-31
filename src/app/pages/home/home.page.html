@@ -1,20 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      MI APLICACION-INICIO
+      AppEjemplo S7
     </ion-title>
+    <ion-icon slot="end" name="home" color="primary" class="ion-padding"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-<!--   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
-
-  <div id="container">
-    <strong>Mi primera app</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-text color="dark">
+    <h1>Este es el home</h1>
+  </ion-text>
+  <ion-button color="success" routerLink="../pag2">
+    Ir a página 2
+  </ion-button>
+  <ion-button expand="block" color="warning" routerLink="../pag3">
+    Ir a página 3
+  </ion-button>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="tertiary">
+    <ion-text slot="end" class="ion-padding">
+      <p>Ionic Sección 6</p>
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>

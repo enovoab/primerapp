@@ -12,12 +12,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'pagina2',
-    loadChildren: () => import('./pages/pagina2/pagina2.module').then( m => m.Pagina2PageModule)
+    path: 'pag2',
+    loadChildren: () => import('./pages/pag2/pag2.module').then( m => m.Pag2PageModule)
   },
   {
-    path: 'pagina3',
-    loadChildren: () => import('./pages/pagina3/pagina3.module').then( m => m.Pagina3PageModule)
+    path: 'pag3',
+    loadChildren: () => import('./pages/pag3/pag3.module').then( m => m.Pag3PageModule)
   },
 ];
 
