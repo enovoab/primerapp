@@ -1,0 +1,22 @@
+
+<app-encabezado titulo ="inputs" icono="reader"></app-encabezado>
+
+<ion-content>
+   <ion-text>
+      <h1>Suma dos numeros</h1>
+    </ion-text>
+
+<ion-item>
+  <ion-label position="floating">Ingrese un numero</ion-label>
+  <ion-input placeholder="Ingrese solo numeros" type="number" [(ngModel)]="n1"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Ingrese otro numero</ion-label>
+  <ion-input placeholder="Ingrese solo numeros" type="number" [(ngModel)]="n2"></ion-input>
+</ion-item>
+<ion-button (click)="onClick()" expand="block">
+  SUMAR
+</ion-button>
+
+</ion-content>
+<app-pie></app-pie>

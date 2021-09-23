@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Pag2PageRoutingModule } from './pag2-routing.module';
+import { LoginPageRoutingModule } from './login-routing.module';
 
-import { Pag2Page } from './pag2.page';
+import { LoginPage } from './login.page';
 import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    Pag2PageRoutingModule,
-    ComponentsModule,
+    LoginPageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [Pag2Page]
+  declarations: [LoginPage]
 })
-export class Pag2PageModule {}
+export class LoginPageModule {}

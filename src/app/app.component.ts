@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Opmenu } from './interfaces/opmenu';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
+  opciones:Opmenu[]=[
+    {
+      link:"home",
+      texto:"home",
+      icono:"home"
+    },
+    {
+      link:"pag2",
+      texto:"Login",
+      icono:"power"
+    },
+
+  ]
   constructor() {}
 }

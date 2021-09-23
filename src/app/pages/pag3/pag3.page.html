@@ -1,15 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button text="volver" mode="ios"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Página 3</ion-title>
-    <ion-icon slot="end" name="person" class="ion-padding" color="primary"></ion-icon>
-  </ion-toolbar>
-</ion-header>
+<app-encabezado titulo="Página 3" icono="person"></app-encabezado>
 
 <ion-content class="ion-padding">
-  <ion-text color="primary">
-    <h1>Esta es Página 3</h1>
-  </ion-text>
+  <ion-item *ngFor="let item of [1,1,1]" lines="none">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Las historia jamás contada</ion-card-subtitle>
+        <ion-card-title>Wacoldo</ion-card-title>
+        <ion-img src="../assets/images/personita.jpg"></ion-img>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+ 
+  
 </ion-content>
+<app-footer></app-footer>

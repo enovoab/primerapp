@@ -1,15 +1,26 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button text="volver" mode="ios"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Página 2</ion-title>
-    <ion-icon  slot="end" name="list" color="primary" class="ion-padding"></ion-icon>
-  </ion-toolbar>
-</ion-header>
+
+<app-encabezado titulo="Inicia Seccion" icono="power"></app-encabezado>
 
 <ion-content class="ion-padding">
-  <ion-text color="primary">
-    <h1>Esta es Página 2</h1>
-  </ion-text>
+ <form #miformulario="ngForm" (ngSubmit)="onSubmit()" >
+   <ion-item>
+     <ion-label position="floating">Usuario</ion-label>
+     <ion-input requered type="text" name="usr" [(ngModel)]="usuario.username"></ion-input>
+   </ion-item>
+
+   <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input requered type="password" name="psw" [(ngModel)]="usuario.password"></ion-input>
+  </ion-item>
+   <ion-button type="submit" expand="block" [disabled] ="miformulario.invalid">
+     Iniciar Seccion
+   </ion-button>
+
+ </form>
+ <ion-img src="../assets/images/auto.webp"></ion-img>
 </ion-content>
+
+
+
+
+<app-footer></app-footer>
