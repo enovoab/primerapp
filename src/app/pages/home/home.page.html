@@ -1,7 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" color="primary"></ion-menu-button>
+    </ion-buttons>
     <ion-title>
-      AppEjemplo S7
+      TeLlevoAPP
     </ion-title>
     <ion-icon slot="end" name="home" color="primary" class="ion-padding"></ion-icon>
   </ion-toolbar>
@@ -9,20 +12,18 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
   <ion-text color="dark">
-    <h1>Este es el home</h1>
+    <h1>Iniciar Seccion</h1>
   </ion-text>
   <ion-button color="success" routerLink="../pag2">
-    Ir a página 2
+    Ir a login 
   </ion-button>
-  <ion-button expand="block" color="warning" routerLink="../pag3">
-    Ir a página 3
-  </ion-button>
-</ion-content>
 
-<ion-footer>
-  <ion-toolbar color="tertiary">
-    <ion-text slot="end" class="ion-padding">
-      <p>Ionic Sección 6</p>
-    </ion-text>
-  </ion-toolbar>
-</ion-footer>
+
+  <ion-text color="primary">
+    <h3 *ngIf="usuario===''" >Desconocido</h3>
+    <h3 *ngIf="usuario!== ''  " > {{usuario}}</h3>
+    
+  </ion-text>
+  </ion-content>
+
+<app-footer></app-footer>
